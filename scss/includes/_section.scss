@@ -1,0 +1,39 @@
+section {
+    &#about,
+    &#contact {
+        background-color: #f6f6f6;
+    }
+    .content {
+        padding-left: 44px;
+    }
+    &#contact {
+        img.icon {
+            width: 50px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    section {
+        .content-container {
+            max-width: 600px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        .content-container {
+            max-width: 350px;
+        }
+        .content {
+            padding-left: 0;
+            font-size: 0.9rem;
+        }
+        &#contact {
+            img.icon {
+                width: 30px;
+            }
+        }
+    }
+}
