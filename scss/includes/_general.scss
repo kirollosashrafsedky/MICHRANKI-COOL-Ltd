@@ -20,6 +20,10 @@ body {
     }
 }
 
+#app {
+    overflow-x: hidden;
+}
+
 .logo {
     img {
         width: 65px;

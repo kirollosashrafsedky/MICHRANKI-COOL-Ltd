@@ -1,4 +1,15 @@
 $(document).ready(function() {
+
+    setTimeout(function(){
+        AOS.init({
+          duration: 500,
+          easing:"ease-in-out",
+          once: false,
+          offset: 100,
+          disable: false
+        });
+    },200);
+
     let menuState = "hidden";
 
     const toggleNav = function(){
