@@ -27,14 +27,27 @@ $(document).ready(function() {
         }
     }
 
+    const navbarTop = function(){
+        if(window.pageYOffset < 50){
+            $('#main-nav').addClass('navbar-top');
+        }else{
+            $('#main-nav').removeClass('navbar-top');
 
+        }
+    }
 
+    navbarTop();
 
 
     $("#main-nav .navbar-toggler").on('click',function(){
         toggleNav();
     })
 
+
+    $(window).on('scroll', function(){
+        navbarTop();
+    })
+    
     $(window).on('resize', function(){
         if($(document).width() > 991){
             if(menuState == "shown"){
