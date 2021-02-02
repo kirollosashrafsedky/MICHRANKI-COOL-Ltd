@@ -4,11 +4,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: $defaultShadow;
-    padding: 0 10px;
+    padding: 20px 10px;
     transition: $defaultTransition;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 500;
 

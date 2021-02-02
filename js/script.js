@@ -27,16 +27,9 @@ $(document).ready(function() {
         }
     }
 
-    const navbarTop = function(){
-        if(window.pageYOffset < 50){
-            $('#main-nav').addClass('navbar-top');
-        }else{
-            $('#main-nav').removeClass('navbar-top');
 
-        }
-    }
 
-    navbarTop();
+
 
     $("#main-nav .navbar-toggler").on('click',function(){
         toggleNav();
@@ -50,9 +43,6 @@ $(document).ready(function() {
         }
     })
 
-    $(window).on('scroll', function(){
-        navbarTop();
-    })
 
     $('.smooth-scroll').on('click',function(event){
           event.preventDefault();
@@ -74,6 +64,10 @@ $(document).ready(function() {
             type: 'bullets',
             },
         loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
     });
     
     const servicesSwiper = new Swiper('#services-swiper .swiper-container', {
@@ -84,6 +78,10 @@ $(document).ready(function() {
             type: 'bullets',
             },
         loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
     });
 
 
